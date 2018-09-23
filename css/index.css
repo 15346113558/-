@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	max-width:100%;
+}
+.nav h1{
+	padding: 0px 0px 0px 50px;
+}
+.p-tel{
+	float: right;
+	margin-top: -50px;
+	padding-left: 50px;
+}
+.navbar-default img{
+	max-width: 100%;
+}
+.navbar-default{
+	font-size: 22px;
+	max-width:100%;
+	height: 50px;	
+	background: deeppink;
+	
+}
+.glyphicon-earphone{
+	margin-left: -20px;
+}
+.navbar-default .navbar-nav li{
+	padding-left: 100px;
+}
+.navbar-default .navbar-nav li a{
+	color: white;
+}
+.section{
+	position: relative;
+}
+.select{
+	height:30px;
+}
+.select .yin{
+	width:90%;
+	height:80%;
+	background:black;
+	opacity:0.2;
+	position: absolute;
+	top:45%;
+	left: 5%;
+	z-index: 1;
+}
+.select .font{
+	position: relative;
+	font-size: 36px;
+	color: white;
+	top:-500px;
+	text-align: center;
+	z-index: 5;
+}
+.select .font p{
+	font-size: 50px;
+}
+.select .btn{
+	position: relative;
+	background: white;
+	margin-left: 38%;
+	margin-top: -60%;
+	z-index: 20;
+}
+.select .btn a{
+	font-size: 28px;
+	color: gray;
+	text-decoration: none;
+}
+.select .btn a:hover{
+	color: deeppink;
+}
+.main{
+	margin: 50px 80px;
+}
+.main .row1 .left,
+.main .row1 .right{
+	border: 1px solid gray;
+	margin-top: 30px;
+}
+.main .row1 .center{
+	text-align: center;
+}
+.main .row1 .center h2{
+	color: deeppink;
+}
+.main .row2 img{
+	width:100%; 
+	padding: 20px 5px;
+}
+.main .row2 h3{
+	text-align: center;
+}
+.main .row2 a{
+	color: deeppink;
+	font-weight: bold;
+	text-decoration: none;
+}
+.main .row2 a:hover{
+	color: black;
+}
+.row2 img:hover{
+	transform: rotate(10deg);
+	transition: all 2s;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background:lavender;
+	padding: 20px 0px;
+	margin: 100px 0px 20px 0px;
+}
+.footer p{
+	color: deeppink;
+	padding: 10px 0px 5px 0px;
+}

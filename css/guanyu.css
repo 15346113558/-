@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	max-width:100%;
+}
+.nav h1{
+	padding: 0px 0px 0px 50px;
+}
+.p-tel{
+	float: right;
+	margin-top: -50px;
+	padding-left: 50px;
+}
+.navbar-default img{
+	max-width: 100%;
+}
+.navbar-default{
+	font-size: 22px;
+	max-width:100%;
+	height: 50px;	
+	background: deeppink;
+	
+}
+.glyphicon-earphone{
+	margin-left: -20px;
+}
+.navbar-default .navbar-nav li{
+	padding-left: 100px;
+}
+.navbar-default .navbar-nav li a{
+	color: white;
+}
+
+.section .container{
+	position: relative;
+	width: 580px;
+	height: 120px;
+	text-indent: 2em;
+	line-height: 40px;
+	top: -500px;
+	margin-left:100px;
+	z-index: 5;
+}
+.section h1{
+	text-align: center;
+	color: deeppink;
+}
+.section p{
+	font-size:17px;
+	color: white;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background:lavender;
+	padding: 20px 0px;
+	margin: 20px 0px;
+	
+}
+.footer p{
+	color: deeppink;
+	padding: 10px 0px 5px 0px;
+}

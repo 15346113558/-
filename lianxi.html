@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<script src="bootstrap-3.3.7-dist/js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/lianxi.css" />
+		
+			
+		
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="nav">
+				<h1 class="hidden-sm hidden-xs"><img src="img/LOGO.png" /></h1>
+				<div class="col-md-2 col-lg-2 hidden-sm hidden-xs p-tel">
+					<i class="glyphicon glyphicon-earphone"><em>027-87229009</em></i>
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<div class="nav navbar-nav">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="rexiao.html">火爆热销</a></li>
+							<li><a href="pinpai.html">品牌服饰</a></li>
+							<li><a href="guanyu.html">关于我们</a></li>
+							<li><a href="lianxi.html">联系我们</a></li>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container-fluid main">
+				<form class="form-group">
+					<label class="control-label">姓名：</label>
+					<input type="text" class="form-control" placeholder="请输入您的姓名" id="username"/>
+					<p id="text1"></p>
+					<label>联系电话：</label>
+					<input type="tel" class="form-control" placeholder="请输入您的手机号" id="number" />
+					<p id="text2"></p>
+					<label>意见：</label>
+					<textarea class="form-control" placeholder="请输入您宝贵的意见，让我们做到更好！(限30个字) " id="userfont"></textarea>
+					<p id="text3"></p>
+				</form>
+				<button class="btn btn-info" id="reg">提交</button>
+				<div class="section">
+					<h2>营业时间</h2>
+					<p>周一至周五 上午8点至晚上6点，周六、周日 上午10点至凌晨1点</p>
+				</div>
+			</div>
+			<div class="container footer">
+				<img src="img/000.jpg" style="width: 120px; height: 120px;">
+				<p>营业时间：周一至周五 , 8:00-18:00</p>
+				<h4><small>[[公司名称]]版权所有 [[ICP备案号]]</small></h4>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#reg").click(function(){
+					if($("#username").val()==''){
+						$("#text1").text('请输入您的姓名').css("color","red");
+						$("#username").css("border","2px solid red");
+					}
+					
+					if($("#number").val()==''){
+						$("#text2").text("请输入您的手机号").css("color","red");
+						$("#number").css("border","2px solid red");
+						return;
+					}else if($("#number").val().length<11){
+						$("#text2").text("格式错误").css("color","red");
+						$("#number").css("border","2px solid red");
+						return;
+					}else if($("#number").val().length==11){
+						$("#text2").css("display","none");
+						$("#number").css("border","1px solid black");
+					}
+					
+					if($("#userfont").val()==''){
+						$("#text3").text("请输入内容").css("color","red");
+						$("#userfont").css("border","2px solid red");
+						return;
+					}else if($("#userfont").val().length>30){
+						$("#text3").text("字数已超出").css("color","red");
+						$("#userfont").css("border","2px solid red");
+						return;
+					}else if($("#userfont").val().length>1||$("#userfont").val().length<30){
+						$("#text3").css("display","none");
+						$("#userfont").css("border","1px solid black");
+						$(alert("提交成功"));
+					}else{
+						location.href="index.html"
+					}
+				})
+			})
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
